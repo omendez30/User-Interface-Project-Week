@@ -156,6 +156,7 @@ body {
   align-items: baseline;
   font-size: 1.6rem;
   font-weight: bold;
+  padding: 5px;
 }
 .home .header header .company {
   color: #fff;
@@ -169,5 +170,33 @@ body {
   text-decoration: none;
   margin: 0 10px;
   color: #fff;
+}
+.home .title {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #fff;
+  background-image: url("https://github.com/omendez30/User-Interface-Project-Week/blob/master/img/home/home-jumbotron.png?raw=true");
+  height: 61.5vh;
+  background-repeat: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-content: flex-start;
+}
+.home .title h1 {
+  width: 40%;
+  margin: 30px 50px;
+  padding: 10px;
+  align-items: space-evenly;
+}
+.home section {
+  display: flex;
+  border: 1px solid red;
+}
+.home section .description h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  flex-direction: row;
+  border: 1px solid green;
 }
 /* Your Code Goes Here */
