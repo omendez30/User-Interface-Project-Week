@@ -189,14 +189,18 @@ body {
   padding: 10px;
   align-items: space-evenly;
 }
-.home section {
+.home .description {
+  border: 1px solid blue;
   display: flex;
-  border: 1px solid red;
+  flex-direction: row;
 }
-.home section .description h3 {
+.home .description h3 {
   font-size: 2rem;
   font-weight: bold;
   flex-direction: row;
   border: 1px solid green;
+}
+.home .description p {
+  border: 1px solid purple;
 }
 /* Your Code Goes Here */
