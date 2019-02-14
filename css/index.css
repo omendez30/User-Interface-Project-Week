@@ -162,14 +162,19 @@ body {
   color: #fff;
   padding: 10px 50px;
 }
-.home .header header nav {
+.home .header header .menu {
+  text-align: center;
+  padding: 10px 30px;
+}
+.home .header header .menu ul {
   padding: 10px;
 }
-.home .header header nav a {
+.home .header header .menu ul li {
   align-content: space-evenly;
   text-decoration: none;
   margin: 0 10px;
   color: #fff;
+  line-height: 1.6;
 }
 .home .title {
   font-size: 5rem;
@@ -194,13 +199,31 @@ body {
   display: flex;
   flex-direction: row;
 }
+.home .description img {
+  width: 100%;
+  padding: 10px 10px;
+}
 .home .description h3 {
   font-size: 2rem;
   font-weight: bold;
-  flex-direction: row;
-  border: 1px solid green;
+  flex-direction: column;
+  padding: 20px 20px;
+  margin-top: 20px;
 }
 .home .description p {
-  border: 1px solid purple;
+  flex-direction: column;
+  align-content: center;
+  font-size: 1.2rem;
+  padding: 10px 30px;
+  line-height: 1.6;
+}
+.home .description h4 {
+  font-size: 1.3rem;
+  border: 1px solid black;
+  margin: 5px 30px;
+  padding: 10px 10px;
+  text-align: center;
+  width: 30%;
+  font-weight: 500;
 }
 /* Your Code Goes Here */
