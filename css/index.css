@@ -133,6 +133,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+/* Your Code Goes Here */
 * {
   box-sizing: border-box;
 }
@@ -148,13 +149,6 @@ body {
   width: 100%;
   max-width: 800px;
 }
-@media (max-width: 500px) {
-  .home {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-}
 .home header {
   display: flex;
   flex-direction: row;
@@ -166,19 +160,15 @@ body {
   padding: 5px;
   width: 100%;
 }
-@media (max-width: 500px) {
-  .home header {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-}
 .home header .company {
   color: #fff;
   padding: 5px 50px;
 }
+.home header .company h3 {
+  font-size: 2rem;
+}
 @media (max-width: 500px) {
-  .home header .company {
+  .home header .company h3 {
     font-size: 6.4rem;
   }
 }
@@ -196,18 +186,6 @@ body {
   width: 50%;
   top: 60px;
   right: 10px;
-}
-@media (max-width: 500px) {
-  .home header .menu {
-    text-align: center;
-    padding: 10px 30px;
-    display: none;
-    text-decoration: none;
-    line-height: 75px;
-    position: fixed;
-    top: 75px;
-    right: 20px;
-  }
 }
 .home header .menu ul {
   padding: 10px;
@@ -395,4 +373,64 @@ body {
   background: #828282;
   color: #ffffff;
 }
-/* Your Code Goes Here */
+.services {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+}
+@media (max-width: 500px) {
+  .services {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+.services header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 1.6rem;
+  font-weight: bold;
+  background: #828282;
+  padding: 5px;
+  width: 100%;
+}
+.services header .company {
+  padding: 10px 50px;
+  color: #ffffff;
+}
+.services header .company h3 {
+  font-size: 2.4rem;
+}
+@media (max-width: 500px) {
+  .services header .company h3 {
+    font-size: 3.2rem;
+  }
+}
+.services header .main-nav {
+  position: relative;
+  left: 2px;
+  padding: 10px 50px;
+  top: 5px;
+}
+.services header .menu {
+  text-align: center;
+  display: none;
+  position: relative;
+  line-height: 75px;
+  width: 100%;
+  top: 60px;
+  right: 10px;
+  border: 1px solid black;
+}
+.services header .menu a {
+  border: 1px solid green;
+  text-decoration: none;
+}
+.services header .menu a li {
+  font-size: 6.4rem;
+}
+.services .service-header-img img {
+  width: 100%;
+}
