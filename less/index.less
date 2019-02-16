@@ -150,134 +150,207 @@ body {
   margin: 0 auto;
   width: 100%;
   max-width: 800px;
-  .header header {
-    background: lightgrey;
+  // @media (max-width: 500px) {
+  //   width: 100%;
+  //   margin: 0;
+  //   padding: 0;
+  // }
+
+  header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
     font-size: 1.6rem;
     font-weight: bold;
+    width: 100%;
+    background: #828282;
     padding: 5px;
+    width: 100%;
+
+    // @media (max-width: 500px) {
+    //   width: 100%;
+    //   padding: 0;
+    //   margin: 0;
+    // }
+
     .company {
       color: #fff;
-      padding: 10px 50px;
+      padding: 5px 50px;
+
+      // @media (max-width: 500px) {
+      //   font-size: 6.4rem;
+      // }
+    }
+    .main-nav {
+      position: relative;
+      right: 30px;
+      top: 5px;
+      cursor: pointer;
     }
     .menu {
       text-align: center;
       padding: 10px 30px;
+      display: none;
+      position: relative;
+      width: 50%;
+      top: 60px;
+      right: 10px;
+      // @media (max-width: 500px) {
+      //   text-align: center;
+      //   padding: 10px 30px;
+      //   display: none;
+      //   text-decoration: none;
+      //   line-height: 75px;
+      //   position: fixed;
+      //   top: 75px;
+      //   right: 20px;
+      // }
+
       ul {
         padding: 10px;
-        li {
-          align-content: space-evenly;
+        a {
           text-decoration: none;
-          margin: 0 10px;
-          color: #fff;
-          line-height: 1.6;
+          line-height: 50px;
+
+          li {
+            align-content: space-evenly;
+            font-size: 2.4rem;
+            margin: 0 10px;
+            color: #fff;
+            line-height: 1.6;
+          }
         }
       }
     }
   }
+
   .title {
-    font-size: 5rem;
+    font-size: 6.4rem;
     font-weight: bold;
     color: #fff;
     background-image: url("https://github.com/omendez30/User-Interface-Project-Week/blob/master/img/home/home-jumbotron.png?raw=true");
-    height: 61.5vh;
+    height: 100%;
+    width: 100%;
     background-repeat: none;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-content: flex-start;
+    @media (max-width: 500px) {
+      height: 100vh;
+      background-image: url("https://github.com/omendez30/User-Interface-Project-Week/blob/master/img/home/home-jumbotron.png?raw=true");
+      height: 100%;
+      width: 100%;
+      //border: 1px solid red;
+    }
     h1 {
       width: 40%;
       margin: 30px 50px;
+      //border: 1px solid red;
       padding: 10px;
       align-items: space-evenly;
       line-height: 1.4;
     }
+    @media (max-width: 500px) {
+      font-size: 3.2rem;
+    }
   }
-
-  .description {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    img {
-      width: 50%;
-      padding: 5px 10px;
-      align-content: space-around;
-      margin-top: 60px;
-      margin-bottom: 20px;
+  section {
+    @media (max-width: 500px) {
+      display: flex;
+      flex-direction: column-reverse;
+      border: 1px solid green;
     }
-    h3 {
-      font-size: 2.8rem;
-      font-weight: bold;
-      flex-direction: column;
-      padding: 20px 20px;
-      margin-top: 20px;
-      width: 100%;
-      align-content: flex-end;
-    }
-    p {
-      flex-direction: column;
-      font-size: 1.6rem;
-      padding: 5px 10px;
-      line-height: 1.6;
-      margin-bottom: 20px;
-      margin-left: 10px;
-      width: 95%;
-    }
-    h4 {
-      font-size: 1.3rem;
-      border: 1px solid #222222;
-      margin: 5px 20px;
-      padding: 10px 10px;
-      text-align: center;
-      width: 30%;
-      font-weight: 500;
-    }
-    .bottom-img {
-      width: 100%;
-      margin-top: 50px;
-    }
-    div .recent-project-content {
-      width: 50%;
+    .description {
+      display: flex;
+      flex-direction: row;
       align-items: center;
-      padding: 10px;
-      margin-left: 200px;
-      font-size: 1.6rem;
-      margin-bottom: 20px;
-    }
+      @media (max-width: 500px) {
+        width: 100%;
+        flex-direction: column-reverse;
+      }
+      img {
+        width: 50%;
+        padding: 5px 10px;
+        align-content: space-around;
+        margin-top: 60px;
+        margin-bottom: 20px;
+      }
+      h3 {
+        font-size: 2.8rem;
+        font-weight: bold;
+        flex-direction: column;
+        padding: 20px 20px;
+        margin-top: 20px;
+        width: 100%;
+        align-content: flex-end;
+        border: 1px solid darkblue;
+      }
+      p {
+        flex-direction: column;
+        font-size: 1.6rem;
+        padding: 5px 10px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        width: 95%;
+      }
+      h4 {
+        font-size: 1.3rem;
+        border: 1px solid #222222;
+        margin: 5px 20px;
+        padding: 10px 10px;
+        text-align: center;
+        width: 30%;
+        font-weight: 500;
+        &:hover {
+          background: #222222;
+          color: #ffffff;
+        }
+      }
+      .bottom-img {
+        width: 100%;
+        margin-top: 50px;
+      }
+      div .recent-project-content {
+        width: 50%;
+        align-items: center;
+        padding: 10px;
+        margin-left: 200px;
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+      }
 
-    .villa {
-      position: relative;
-      bottom: 50px;
-      left: 67.5%;
-      width: 30%;
-      padding: 20px;
-      text-align: center;
-      background: #d8d8d8;
-      font-size: 20px;
-    }
-    .outskirts {
-      position: relative;
-      bottom: 50px;
-      width: 30%;
-      padding: 20px;
-      text-align: center;
-      background: #d8d8d8;
-      font-size: 20px;
-    }
-    .blocks {
-      position: relative;
-      bottom: 50px;
-      left: 67.5%;
-      width: 30%;
-      padding: 20px;
-      text-align: center;
-      background: #d8d8d8;
-      font-size: 20px;
+      .villa {
+        position: relative;
+        bottom: 50px;
+        left: 67.5%;
+        width: 30%;
+        padding: 20px;
+        text-align: center;
+        background: #d8d8d8;
+        font-size: 20px;
+      }
+      .outskirts {
+        position: relative;
+        bottom: 50px;
+        width: 30%;
+        padding: 20px;
+        text-align: center;
+        background: #d8d8d8;
+        font-size: 20px;
+      }
+      .blocks {
+        position: relative;
+        bottom: 50px;
+        left: 67.5%;
+        width: 30%;
+        padding: 20px;
+        text-align: center;
+        background: #d8d8d8;
+        font-size: 20px;
+      }
     }
   }
   footer {

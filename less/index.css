@@ -148,45 +148,70 @@ body {
   width: 100%;
   max-width: 800px;
 }
-.home .header header {
-  background: lightgrey;
+.home header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
   font-size: 1.6rem;
   font-weight: bold;
+  background: #828282;
   padding: 5px;
+  width: 100%;
 }
-.home .header header .company {
+.home header .company {
   color: #fff;
-  padding: 10px 50px;
+  padding: 5px 50px;
 }
-.home .header header .menu {
+.home header .main-nav {
+  position: relative;
+  right: 30px;
+  top: 5px;
+  cursor: pointer;
+}
+.home header .menu {
   text-align: center;
   padding: 10px 30px;
+  display: none;
+  position: relative;
+  width: 50%;
+  top: 60px;
+  right: 10px;
 }
-.home .header header .menu ul {
+.home header .menu ul {
   padding: 10px;
 }
-.home .header header .menu ul li {
-  align-content: space-evenly;
+.home header .menu ul a {
   text-decoration: none;
+  line-height: 50px;
+}
+.home header .menu ul a li {
+  align-content: space-evenly;
+  font-size: 2.4rem;
   margin: 0 10px;
   color: #fff;
   line-height: 1.6;
 }
 .home .title {
-  font-size: 5rem;
+  font-size: 6.4rem;
   font-weight: bold;
   color: #fff;
   background-image: url("https://github.com/omendez30/User-Interface-Project-Week/blob/master/img/home/home-jumbotron.png?raw=true");
-  height: 61.5vh;
+  height: 100%;
+  width: 100%;
   background-repeat: none;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-content: flex-start;
+}
+@media (max-width: 500px) {
+  .home .title {
+    height: 100vh;
+    background-image: url("https://github.com/omendez30/User-Interface-Project-Week/blob/master/img/home/home-jumbotron.png?raw=true");
+    height: 100%;
+    width: 100%;
+  }
 }
 .home .title h1 {
   width: 40%;
@@ -195,19 +220,37 @@ body {
   align-items: space-evenly;
   line-height: 1.4;
 }
-.home .description {
+@media (max-width: 500px) {
+  .home .title {
+    font-size: 3.2rem;
+  }
+}
+@media (max-width: 500px) {
+  .home section {
+    display: flex;
+    flex-direction: column-reverse;
+    border: 1px solid green;
+  }
+}
+.home section .description {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.home .description img {
+@media (max-width: 500px) {
+  .home section .description {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+}
+.home section .description img {
   width: 50%;
   padding: 5px 10px;
   align-content: space-around;
   margin-top: 60px;
   margin-bottom: 20px;
 }
-.home .description h3 {
+.home section .description h3 {
   font-size: 2.8rem;
   font-weight: bold;
   flex-direction: column;
@@ -215,8 +258,9 @@ body {
   margin-top: 20px;
   width: 100%;
   align-content: flex-end;
+  border: 1px solid darkblue;
 }
-.home .description p {
+.home section .description p {
   flex-direction: column;
   font-size: 1.6rem;
   padding: 5px 10px;
@@ -225,7 +269,7 @@ body {
   margin-left: 10px;
   width: 95%;
 }
-.home .description h4 {
+.home section .description h4 {
   font-size: 1.3rem;
   border: 1px solid #222222;
   margin: 5px 20px;
@@ -234,11 +278,15 @@ body {
   width: 30%;
   font-weight: 500;
 }
-.home .description .bottom-img {
+.home section .description h4:hover {
+  background: #222222;
+  color: #ffffff;
+}
+.home section .description .bottom-img {
   width: 100%;
   margin-top: 50px;
 }
-.home .description div .recent-project-content {
+.home section .description div .recent-project-content {
   width: 50%;
   align-items: center;
   padding: 10px;
@@ -246,7 +294,7 @@ body {
   font-size: 1.6rem;
   margin-bottom: 20px;
 }
-.home .description .villa {
+.home section .description .villa {
   position: relative;
   bottom: 50px;
   left: 67.5%;
@@ -256,7 +304,7 @@ body {
   background: #d8d8d8;
   font-size: 20px;
 }
-.home .description .outskirts {
+.home section .description .outskirts {
   position: relative;
   bottom: 50px;
   width: 30%;
@@ -265,7 +313,7 @@ body {
   background: #d8d8d8;
   font-size: 20px;
 }
-.home .description .blocks {
+.home section .description .blocks {
   position: relative;
   bottom: 50px;
   left: 67.5%;
