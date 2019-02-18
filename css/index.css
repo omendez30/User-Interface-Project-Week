@@ -174,32 +174,37 @@ body {
 }
 .home header .main-nav {
   position: relative;
-  right: 30px;
-  top: 5px;
   cursor: pointer;
 }
-.home header .menu {
-  text-align: center;
-  padding: 10px 30px;
+.home header .main-nav .dropdown-button {
+  padding: 15px;
+  position: static;
+}
+.home header .main-nav .dropdown-button .hide-btn {
   display: none;
-  position: relative;
-  width: 50%;
-  top: 60px;
-  right: 10px;
 }
-.home header .menu ul {
-  padding: 10px;
+.home header .menu {
+  width: 100%;
+  position: initial;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  background: #828282;
+  color: #ffffff;
 }
-.home header .menu ul a {
+.home header .menu a {
+  color: #ffffff;
+}
+.home header .menu-link {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 6.4rem;
   text-decoration: none;
-  line-height: 50px;
 }
-.home header .menu ul a li {
-  align-content: space-evenly;
-  font-size: 2.4rem;
-  margin: 0 10px;
-  color: #fff;
-  line-height: 1.6;
+.home header .menu-hidden {
+  display: none;
 }
 .home .title {
   font-size: 6.4rem;
