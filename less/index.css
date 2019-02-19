@@ -462,6 +462,103 @@ body {
   font-size: 1.2rem;
   line-height: 1.5;
 }
+.contact {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+}
+@media (max-width: 500px) {
+  .contact {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+.contact header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 1.6rem;
+  font-weight: bold;
+  background: #828282;
+  padding: 5px;
+  width: 100%;
+}
+.contact header .company {
+  padding: 10px 50px;
+  color: #ffffff;
+}
+.contact header .company h3 {
+  font-size: 2.4rem;
+}
+.contact header .company h3 a {
+  text-decoration: none;
+  color: #ffffff;
+}
+@media (max-width: 500px) {
+  .contact header .company h3 {
+    font-size: 3.2rem;
+  }
+}
+.contact header .main-nav {
+  position: relative;
+  left: 2px;
+  padding: 10px 50px;
+  top: 5px;
+}
+.contact header .menu {
+  text-align: center;
+  display: none;
+  position: relative;
+  line-height: 75px;
+  width: 100%;
+  top: 60px;
+  right: 10px;
+  border: 1px solid black;
+}
+.contact header .menu a {
+  border: 1px solid green;
+  text-decoration: none;
+}
+.contact header .menu a li {
+  font-size: 6.4rem;
+}
+.contact .contact-header-img img {
+  width: 100%;
+}
+.contact .contact-header-img h1 {
+  position: relative;
+  bottom: 80px;
+  left: 60px;
+  font-size: 6.4rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+.contact .main-content {
+  display: flex;
+  flex-direction: row;
+}
+.contact .main-content .input-info {
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.contact .main-content .input-info .welcome-text {
+  border: 1px solid red;
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin: 20px 50px;
+}
+.contact .main-content .input-info form {
+  border: 1px solid red;
+  width: 100%;
+  font-size: 1.6rem;
+  margin: 10px 50px;
+}
+.contact .main-content .input-info form input .contact-input {
+  border: 1px solid red;
+}
 footer {
   background: #828282;
   font-size: 1.4rem;
