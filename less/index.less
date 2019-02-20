@@ -602,6 +602,7 @@ body {
       font-size: 6.4rem;
       font-weight: bold;
       color: #ffffff;
+      width: 90%;
     }
   }
   .main-content {
@@ -614,7 +615,7 @@ body {
       .welcome-text {
         font-size: 2.4rem;
         font-weight: bold;
-        margin: 20px 50px;
+        margin: 0 50px 20px 50px;
       }
       form {
         width: 100%;
@@ -666,6 +667,42 @@ body {
           margin: 10px 0;
         }
       }
+      .submit-btn {
+        margin: 10px 50px 10px 50px;
+        padding: 10px 30px;
+        background: #ffffff;
+        border: 1px solid black;
+        width: 30%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+        &:hover {
+          background: black;
+          color: #ffffff;
+        }
+      }
+    }
+    #locations {
+      font-size: 1.6rem;
+      display: flex;
+      flex-direction: column;
+      .location-header {
+        font-weight: bold;
+        font-size: 2.4rem;
+        margin-bottom: 20px;
+      }
+      .city {
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      address {
+        width: 45%;
+        padding: 10px 0;
+        line-height: 1.5;
+      }
     }
   }
 }
@@ -687,21 +724,21 @@ footer {
   .cities {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    //width: 40%;
 
     address {
       //width: 65%;
-      padding-right: 61px;
-
+      //padding-right: 61px;
+      width: 85%;
       font-size: 1.2rem;
     }
   }
   .inquireies {
-    margin-right: 30px;
+    margin-right: 20px;
 
-    width: 100%;
+    width: 81%;
     .email-input {
-      width: 100%;
+      width: 95%;
       padding: 10px;
       border-radius: 5px;
     }
