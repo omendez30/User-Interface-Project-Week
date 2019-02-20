@@ -164,13 +164,12 @@ body {
   color: #fff;
   padding: 5px 50px;
 }
-.home header .company h3 {
+.home header .company .company-logo {
   font-size: 2rem;
 }
-@media (max-width: 500px) {
-  .home header .company h3 {
-    font-size: 6.4rem;
-  }
+.home header .company .company-logo a {
+  color: #ffffff;
+  text-decoration: none;
 }
 .home header .main-nav {
   position: relative;
@@ -272,7 +271,6 @@ body {
   margin-top: 20px;
   width: 100%;
   align-content: flex-end;
-  border: 1px solid darkblue;
 }
 .home section .description p {
   flex-direction: column;
@@ -555,19 +553,40 @@ body {
   margin: 10px 50px;
 }
 .contact .main-content .input-info input {
-  width: 100%;
+  width: 80%;
   border-radius: 5px;
   margin: 10px 50px;
-  padding: 5px 0;
+  padding: 10px 0;
 }
 .contact .main-content .input-info .disclaimer {
   margin: 0px 50px;
 }
 .contact .main-content .input-info textarea {
-  width: 100%;
-  border: 1px solid green;
+  width: 80%;
   margin: 0 50px;
   padding: 20px;
+}
+.contact .main-content .input-info .radio-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: 46px;
+}
+.contact .main-content .input-info .radio-btn label {
+  font-size: 1.6rem;
+  margin: 10px 0;
+}
+.contact .main-content .input-info .radio-btn #small-business {
+  width: 5%;
+  margin: 10px 0;
+}
+.contact .main-content .input-info .radio-btn #residential {
+  width: 5%;
+  margin: 10px 0;
+}
+.contact .main-content .input-info .radio-btn #corporation {
+  width: 5%;
+  margin: 10px 0;
 }
 footer {
   background: #828282;

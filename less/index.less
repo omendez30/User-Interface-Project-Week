@@ -178,10 +178,11 @@ body {
     .company {
       color: #fff;
       padding: 5px 50px;
-      h3 {
+      .company-logo {
         font-size: 2rem;
-        @media (max-width: 500px) {
-          font-size: 6.4rem;
+        a {
+          color: #ffffff;
+          text-decoration: none;
         }
       }
     }
@@ -282,7 +283,6 @@ body {
         margin-top: 20px;
         width: 100%;
         align-content: flex-end;
-        border: 1px solid darkblue;
       }
       p {
         flex-direction: column;
@@ -622,19 +622,49 @@ body {
         margin: 10px 50px;
       }
       input {
-        width: 100%;
+        width: 80%;
         border-radius: 5px;
         margin: 10px 50px;
-        padding: 5px 0;
+        padding: 10px 0;
       }
       .disclaimer {
         margin: 0px 50px;
       }
       textarea {
-        width: 100%;
-        border: 1px solid green;
+        width: 80%;
         margin: 0 50px;
         padding: 20px;
+      }
+      // .radio-btn {
+      //   display: flex;
+      //   flex-direction: row;
+      //   justify-content: flex-start;
+      //   margin: 0;
+      //   width: 40%;
+      //   border: 1px solid red;
+      // }
+
+      .radio-btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-left: 46px;
+        label {
+          font-size: 1.6rem;
+          margin: 10px 0;
+        }
+        #small-business {
+          width: 5%;
+          margin: 10px 0;
+        }
+        #residential {
+          width: 5%;
+          margin: 10px 0;
+        }
+        #corporation {
+          width: 5%;
+          margin: 10px 0;
+        }
       }
     }
   }
