@@ -362,36 +362,46 @@ body {
   padding: 10px 50px;
   color: #ffffff;
 }
-.services header .company h3 {
-  font-size: 2.4rem;
+.services header .company .company-logo {
+  font-size: 2rem;
 }
-@media (max-width: 500px) {
-  .services header .company h3 {
-    font-size: 3.2rem;
-  }
+.services header .company .company-logo a {
+  color: #ffffff;
+  text-decoration: none;
 }
 .services header .main-nav {
   position: relative;
-  left: 2px;
-  padding: 10px 50px;
-  top: 5px;
+  cursor: pointer;
+}
+.services header .main-nav .dropdown-button {
+  padding: 15px;
+  position: static;
+}
+.services header .main-nav .dropdown-button .hide-btn {
+  display: none;
 }
 .services header .menu {
-  text-align: center;
-  display: none;
-  position: relative;
-  line-height: 75px;
   width: 100%;
-  top: 60px;
-  right: 10px;
-  border: 1px solid black;
+  position: initial;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  background: #828282;
+  color: #ffffff;
 }
 .services header .menu a {
-  border: 1px solid green;
+  color: #ffffff;
+}
+.services header .menu-link {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 6.4rem;
   text-decoration: none;
 }
-.services header .menu a li {
-  font-size: 6.4rem;
+.services header .menu-hidden {
+  display: none;
 }
 .services .service-header-img img {
   width: 100%;
@@ -501,26 +511,37 @@ body {
 }
 .contact header .main-nav {
   position: relative;
-  left: 2px;
-  padding: 10px 50px;
-  top: 5px;
+  cursor: pointer;
+}
+.contact header .main-nav .dropdown-button {
+  padding: 15px;
+  position: static;
+}
+.contact header .main-nav .dropdown-button .hide-btn {
+  display: none;
 }
 .contact header .menu {
-  text-align: center;
-  display: none;
-  position: relative;
-  line-height: 75px;
   width: 100%;
-  top: 60px;
-  right: 10px;
-  border: 1px solid black;
+  position: initial;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  background: #828282;
+  color: #ffffff;
 }
 .contact header .menu a {
-  border: 1px solid green;
+  color: #ffffff;
+}
+.contact header .menu-link {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 6.4rem;
   text-decoration: none;
 }
-.contact header .menu a li {
-  font-size: 6.4rem;
+.contact header .menu-hidden {
+  display: none;
 }
 .contact .contact-header-img img {
   width: 100%;
