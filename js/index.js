@@ -20,15 +20,16 @@ class Expanded {
   }
 }
 
-let expand = document
-  .querySelectorAll(".main-nav")
-  .forEach(element => new Expanded(element));
-
 class Tabs {
   constructor(element) {
     this.element = element;
   }
 }
+
+let expand = document
+  .querySelectorAll(".main-nav")
+  .forEach(element => new Expanded(element));
+
 let links = document
   .querySelectorAll(".tabs .tabs-link")
   .forEach(tab => new Tabs(tab));

@@ -188,11 +188,16 @@ body {
     }
     .main-nav {
       position: relative;
+      right: 50px;
       cursor: pointer;
+      overflow: visible;
+      width: 100%;
+      padding: 0 30px;
       //left: 120px;
       .dropdown-button {
         padding: 15px;
-        position: static;
+        position: relative;
+        right: -600px;
         .hide-btn {
           display: none;
         }
@@ -200,6 +205,7 @@ body {
     }
     .menu {
       width: 100%;
+      max-height: 100%;
       position: initial;
       display: flex;
       flex-direction: column;
@@ -207,8 +213,21 @@ body {
       margin-top: 10px;
       background: #828282;
       color: #ffffff;
-      a {
-        color: #ffffff;
+      padding-left: 50px;
+      
+      ul {
+        li {
+          margin-bottom: 30px;
+          a {
+            color: #ffffff;
+            padding: 10px;
+            text-decoration: none;
+              &:hover{
+              color: black;
+            }
+          }
+          }
+        }
       }
     }
     .menu-link {
@@ -228,7 +247,9 @@ body {
     font-weight: bold;
     color: #fff;
     background-image: url("https://github.com/omendez30/User-Interface-Project-Week/blob/master/img/home/home-jumbotron.png?raw=true");
-    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 65vh;
     width: 100%;
     background-repeat: none;
     display: flex;
@@ -236,7 +257,7 @@ body {
     justify-content: flex-end;
     align-content: flex-start;
     @media (max-width: 500px) {
-      height: 100vh;
+      height: 65vh;
       background-image: url("https://github.com/omendez30/User-Interface-Project-Week/blob/master/img/home/home-jumbotron.png?raw=true");
       height: 100%;
       width: 100%;
