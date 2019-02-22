@@ -1,231 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Home</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/index.css" />
-    <!--[if IE]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
+<head>
+	<meta charset="utf-8">
+	<title>Home</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
 
-  <body>
-    <div class="container">
-  
-        <header>
-          
-          <nav class="main-nav">
-            <h1 class="company-logo"><a href="index.html">S&J</a></h1>
-            <div class="menu menu-hidden">
-              
-                <a class="menu-link" href="index.html">Home</a>
-                <a class="menu-link" href="services.html">Services</a>
-                <a  class="menu-link" href="contact.html">Contact</a>
-            </div>
-          </nav>
-            
-                
-				    
-          <img class="open-img" src="https://github.com/omendez30/User-Interface-Project-Week/blob/master/img/nav-hamburger.png?raw=true"><img class="close-img hide-btn" src="https://github.com/omendez30/User-Interface-Project-Week/blob/master/img/nav-hamburger-close.png?raw=true" alt="closing-img">
-          
-          
-        </header>
-      
-      <div class="jumbotron"><img src="https://github.com/omendez30/User-Interface-Project-Week/blob/master/img/home/home-jumbotron.png?raw=true" class="title-img" alt="company-img">
-      <div class="Jumbo-text"><p>Integrity,</p> <p>Excellence,</p> <p>Progress.</p></div></div>
+<body>
+	<div class="container">
+		<nav class="navigation">
+			<h1>S&J</h1>
+			<div class="nav-items">
+				<a href="index.html">Home</a>
+				<a href="services.html">Services</a>
+				<a href="contact.html">Contact</a>
+			</div>
 
-      <section>
-        <div class="description">
-          <div class="content"><h3>Smith & Jones Architects</h3>
-          
-            <p>
-              Et sed autem causae appareat, tempor abhorreant te mei, facer
-              facilisis sit ea. Eu timeam vidisse consectetuer sed. Duo etiam
-              laboramus dissentiet in, nec no errem
-            </p>
-          
+        <img class="navigation-btn active" src="/img/nav-hamburger.png" alt="Menu-hamburger">
+        <img class="navigation-btn" src="/img/nav-hamburger-close.png" alt="closing-btn">
+		</nav>
 
-            <h4>Learn More</h4>
-          </div>
-        
-            <div class="client-img"><img 
-              src="https://github.com/omendez30/User-Interface-Project-Week/blob/master/img/home/home-img-1.png?raw=true" alt="blueprint"
-            /></div>
-            <div class="client-img-mobile"><img src="https://github.com/omendez30/User-Interface-Project-Week/blob/master/img/home/home-mobile-img-1.png?raw=true" alt="blueprint"/></div>
-          </div>
+		<div class="jumbotron">
+			<img src="/img/home/home-jumbotron.png" alt="Abstract Buildings">
+			<div class="jumbotron-text">  
+				<p>Integrity,</p>
+				<p>Excellence,</p>
+				<p>Progress.</p>
+			</div>
+		</div>
+		
+		<section class="learn-more">
+			<div class="learn-more-card">
+				<div class="learn-more-content">
+					<h2>Smith & Jones Architects</h2>
+					<p>Et sed autem causae appareat, tempor abhorreant te mei, facer facilisis sit ea. Eu timeam vidisse consectetuer sed. Duo etiam laboramus dissentiet in, nec no errem </p>
+					<p class="button">Learn More</p>
+				</div>
+				<div class="learn-more-img"><img src="/img/home/home-img-1.png" alt="blueprint"></div>
+				<div class="learn-more-img-mobile"><img src="/img/home/home-mobile-img-1.png" alt="blueprint"></div>
+				
+			</div>
+			<div class="learn-more-card">
+				<div class="learn-more-img"><img src="/img/home/home-img-2.png" alt="Waterfront View"></div>
+				<div class="learn-more-img-mobile"><img src="/img/home/home-mobile-img-2.png" alt="blueprint"></div>
+				
+				<div class="learn-more-content">
+					<h2>Futuristic Designs</h2>
+					<p>Et sed autem causae appareat, tempor abhorreant te mei, facer facilisis sit ea. Eu timeam vidisse consectetuer sed. Duo etiam laboramus dissentiet in, nec no errem </p>
+					<p class="button">View Designs</p>
+				</div>
+				
+			</div>
+		</section>
 
-        <div class="description">
-          
-            <div class="client-img"><img
-              src="https://github.com/omendez30/User-Interface-Project-Week/blob/master/img/home/home-img-2.png?raw=true" alt="oasis-view"
-            /></div>
-            <div class="client-img-mobile"><img src="https://github.com/omendez30/User-Interface-Project-Week/blob/master/img/home/home-mobile-img-2.png?raw=true" alt="oasis-view"/></div>
-          
-          <div class="content"><h3>Futuristic Designs</h3>
-          
-            <p>
-              Et sed autem causae appareat, tempor abhorreant te mei, facer
-              facilisis sit ea. Eu timeam vidisse consectetuer sed. Duo etiam
-              laboramus dissentiet in, nec no errem
-            </p>
-          
-          <h4>View Designs</h4>
-          </div>
-        </div>
-      </section>
+		<section class="projects">
+			<h3>Recent Projects</h3>
+			<div class="project-card">
+				<div class="villas">
+					<img class="project-img" src="/img/home/home-villas-img.png" alt="Image of the Villas">
+					<img class="project-mobile-img" src="/img/home/home-mobile-villas-img.png" alt="">
+					<div>THE VILLAS</div>
+				</div>
+				<p>The Villas bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. </p>
+				<p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+			</div>
 
-      <section class="projects">
-          <h3>Recent Projects</h3>
-        <div class="project-description">
-          <div class="villas">
-            <img
-              src="https://github.com/omendez30/User-Interface-Project-Week/blob/master/img/home/home-villas-img.png?raw=true"
-              alt="villas"
-            />
-            <img src="https://github.com/omendez30/User-Interface-Project-Week/blob/master/img/home/home-mobile-villas-img.png?raw=true" alt="villas-mobile">
-            <div><p class="villa">THE VILLAS</p></div>
-          </div>
-          
-          <!-- <div class="content"> -->
-            <p class="recent-project-content">
-              The Villas bring to the table win-win survival strategies to
-              ensure proactive domination. At the end of the day, going forward,
-              a new normal that has evolved from generation X is on the runway
-              heading towards a streamlined cloud solution.</p> 
-              <p class="recent-project-content">Capitalize on low
-              hanging fruit to identify a ballpark value added activity to beta
-              test. Override the digital divide with additional clickthroughs
-              from DevOps. Nanotechnology immersion along the information
-              highway will close the loop on focusing solely on the bottom line.
-            </p>
-          </div>
-        </div>
+			<div class="project-card">
+				<div class="outskirts">
+					<img class="project-img" src="/img/home/home-outskirts-img.png" alt="The outskirts">
+					<img class="project-mobile-img" src="/img/home/home-mobile-outskirts-img.png" alt="">					
+					<div>OUTSKIRTS</div>
+				</div>
+				<p>The Outskirts are amazing to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. </p>
+				<p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+			</div>
 
-        <div class="project-description">
-          
-            <div class="outskirts">
-              <img
-              src="https://github.com/omendez30/User-Interface-Project-Week/blob/master/img/home/home-outskirts-img.png?raw=true"
-              alt="outskirts"
-            />
-              <img src="https://github.com/omendez30/User-Interface-Project-Week/blob/master/img/home/home-mobile-outskirts-img.png?raw=true" alt="outskirts-mobile">
-              <div>OUTSKIRTS</p></div>
-          </div>
-        
+			<div class="project-card">
+				<div class="blocks">
+					<img class="project-img" src="/img/home/home-the-blocks-img.png" alt="">
+					<img class="project-mobile-img" src="/img/home/home-mobile-the-blocks-img.png" alt="">
+					<div>THE BLOCKS</div>
+				</div>
+				<p>The Blocks are amazing to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. </p>
+				<p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+			</div>
+		</section>
 
-          <p class="recent-project-content">
-            The Outskirts are amazing to the table win-win survival strategies
-            to ensure proactive domination. At the end of the day, going
-            forward, a new normal that has evolved from generation X is on the
-            runway heading towards a streamlined cloud solution.</p> 
-            <p class="recent-project-content">Capitalize on
-            low hanging fruit to identify a ballpark value added activity to
-            beta test. Override the digital divide with additional clickthroughs
-            from DevOps. Nanotechnology immersion along the information highway
-            will close the loop on focusing solely on the bottom line.
-          </p>
-        </div>
+		<footer>
+			<div class="footer-content">
+				<div class="contact-form">
+					<h4>Interested in starting a project? </h4>
+					<h4>Let’s talk:</h4>
+					<input type="text" value="Enter email">
+					<small>We'll never share your email with anyone else.</small>
+				</div>
 
-        
-        <div class ="project-description">
-            <div class="blocks">
-              <img src="https://github.com/omendez30/User-Interface-Project-Week/blob/master/img/home/home-the-blocks-img.png?raw=true" alt="blocks"/>
-              
-              <img src="https://github.com/omendez30/User-Interface-Project-Week/blob/master/img/home/home-mobile-the-blocks-img.png?raw=true" alt="the-blocks-mobile">
-              <div>The Blocks</div> 
-              <p class="recent-project-content">The Blocks are amazing to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution.</p> 
+				<address>
+					<h4>New York</h4>
+					<p>123 Lane</p>
+					<p>Suite 100</p>
+					<p>Albany, NY 12345</p>
+					<p>202 555 0144</p>
+				</address>
 
-              <p class="recent-project-content">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
-          </div>
-        </div>
-      </section>
-	 
-	  
-	  <footer><div class="inquireies"><p>Interested in starting a project?</p><p>Let's Talk:</p><form action=""><input type="email" class="email-input" value="" placeholder="Enter Email"><small>we'll never share your email with anyone else</small></form></div><div class="cities"><h4>New York</h4><address><p>123 Lane</p>
-        <p>Suite 100</p>
-        <p>Albany, NY 12345</p>
-        <p>202 555 0144</p></address></div><div class="cities"><h4>Florida</h4><address><p></p>Ocean Drive
-          <p>Suite 201</p>
-          <p>Orlando, FL 22345</p>
-          <p>502 555 0144</p>
-            </address></div><div class="cities"><h4>California</h4><address>Mountain Street
-                <p>Suite 105</p>
-                <p>San Diego, CA 22345</p>
-                <p>702 555 0144</p></address></div>
-                <small>Copyright &copy; 2018 Smith and Jones</small></footer>
-      <!-- Home Page Content:
+				<address>
+					<h4>Florida</h4>
+					<p>Ocean Drive</p>
+					<p>Suite 201</p>
+					<p>Orlando, FL 22345</p>
+					<p>502 555 0144</p>
+				</address>
 
-Integrity,
-Excellence,
-Progress.
+				<address>
+					<h4>California</h4>
+					<p>Mountain Street</p>
+					<p>Suite 105</p>
+					<p>San Diego, CA 22345</p>
+					<p>702 555 0144</p>
+				</address>
+			</div>
 
-Smith & Jones Architects
+			<small>Copyright © 2018 Smith and Jones</small>
+		</footer>
+	</div>
 
-Et sed autem causae appareat, tempor abhorreant te mei, facer facilisis sit ea. Eu timeam vidisse consectetuer sed. Duo etiam laboramus dissentiet in, nec no errem 
-
-Learn More
-
-Futuristic Designs
-
-Et sed autem causae appareat, tempor abhorreant te mei, facer facilisis sit ea. Eu timeam vidisse consectetuer sed. Duo etiam laboramus dissentiet in, nec no errem 
-
-View Designs
-
-Recent Projects
-
-THE VILLAS
-
-The Villas bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. 
-
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
-
-OUTSKIRTS
-
-The Outskirts are amazing to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. 
-
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
-
-THE BLOCKS
-
-The Blocks are amazing to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. 
-
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
-
--->
-
-      <!-- FOOTER CONTENT
-Interested in starting a project?  
-Let’s talk:
-
-Enter email
-
-We'll never share your email with anyone else.
-
-New York
-123 Lane
-Suite 100
-Albany, NY 12345
-202 555 0144
-
-Florida
-Ocean Drive
-Suite 201
-Orlando, FL 22345
-502 555 0144
-
-California
-Mountain Street
-Suite 105
-San Diego, CA 22345
-702 555 0144
-
-Copyright © 2018 Smith and Jones
--->
-    </div>
-    <script src="js/index.js"></script>
-  </body>
+	<script src="js/index.js"></script>
+</body>
 </html>

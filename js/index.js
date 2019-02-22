@@ -1,43 +1,25 @@
 // JS goes here
-class Expanded {
-  constructor(element) {
-    this.element = element;
 
-    this.button = this.element.querySelector(".main-nav .dropdown-button");
-    this.buttonOpen = this.element.querySelector(".open-img");
-    this.buttonClose = this.element.querySelector(".close-img");
-    //console.log(this.buttonClose);
-
-    this.content = this.element.querySelector(".menu");
-    //console.log(this.content);
-
-    this.button.addEventListener("click", () => this.toggleExpand());
-  }
-  toggleExpand() {
-    this.content.classList.toggle("menu-hidden");
-    this.buttonOpen.classList.toggle("hide-btn");
-    this.buttonClose.classList.toggle("hide-btn");
-  }
-}
-
-class TabLink {
-  constructor(link) {
-    this.link = link;
-    this.data = this.link.dataset.tab;
+class Tab {
+  constructor(tab) {
+    this.tab = tab;
+    this.data = this.tab.dataset.tab;
     this.selectedTab = document.querySelector(
-      `.tab-item[data-tab="${this.data}"]`
+      `.button[data-tab = "${this.data}"]`
     );
-    this.tabItem = new TabContent(this.itemElement);
 
-    this.link.addEventListener("click", () => this.select());
+    this.selectedTab = new TabContent(this.data);
+
+    this.tab.addEventListener("click", () => this.select());
   }
 
   select() {
     document
-      .querySelectorAll(".tabs-links")
-      .forEach(link => link.classList.remove("tabs-link-selected"));
-    this.link.classList.add("tabs-link-selected");
-    this.tabItem.select();
+      .querySelectorAll(".button")
+      .forEach(tab => tab.classList.remove("selected"));
+    this.tab.classList.add("selected");
+
+    this.selectedTab.select();
   }
 }
 
@@ -47,19 +29,32 @@ class TabContent {
   }
 
   select() {
-    const card = document
-      .querySelectorAll(".tab-item")
-      .forEach(item => item.classList.remove("tab-item-selected"));
-    const display = document.querySelector(
-      `.tab-content[data-tab ="${this.content}"]`
+    const cards = document
+      .querySelectorAll(".tab-content")
+      .forEach(content => content.classList.remove("selected"));
+    const cardToDisplay = document.querySelector(
+      `.tab-content[data-tab = "${this.content}"]`
     );
-    display.classList.add("tab-item-selected");
+    cardToDisplay.classList.add("selected");
   }
 }
-let expand = document
-  .querySelectorAll(".main-nav")
-  .forEach(element => new Expanded(element));
+tabs = document.querySelectorAll(".button").forEach(tab => new Tab(tab));
 
-let link = document
-  .querySelectorAll(".tabs-links")
-  .forEach(link => new TabLink(link));
+class NavButton {
+  constructor(button) {
+    this.button = button;
+    this.button.addEventListener("click", () => this.handleClick());
+  }
+
+  handleClick() {
+    document
+      .querySelectorAll(".navigation-btn")
+      .forEach(button => button.classList.toggle("active"));
+    const navItems = document.querySelector(".nav-items");
+    navItems.classList.toggle("active");
+  }
+}
+
+const menuButton = document
+  .querySelectorAll(".navigation-btn")
+  .forEach(button => new NavButton(button));
