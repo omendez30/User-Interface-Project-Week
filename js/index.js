@@ -20,17 +20,46 @@ class Expanded {
   }
 }
 
-class Tabs {
-  constructor(element) {
-    this.element = element;
+class TabLink {
+  constructor(link) {
+    this.link = link;
+    this.data = this.link.dataset.tab;
+    this.selectedTab = document.querySelector(
+      `.tab-item[data-tab="${this.data}"]`
+    );
+    this.tabItem = new TabContent(this.itemElement);
+
+    this.link.addEventListener("click", () => this.select());
+  }
+
+  select() {
+    document
+      .querySelectorAll(".tabs-links")
+      .forEach(link => link.classList.remove("tabs-link-selected"));
+    this.link.classList.add("tabs-link-selected");
+    this.tabItem.select();
   }
 }
 
+class TabContent {
+  constructor(content) {
+    this.content = content;
+  }
+
+  select() {
+    const card = document
+      .querySelectorAll(".tab-item")
+      .forEach(item => item.classList.remove("tab-item-selected"));
+    const display = document.querySelector(
+      `.tab-content[data-tab ="${this.content}"]`
+    );
+    display.classList.add("tab-item-selected");
+  }
+}
 let expand = document
   .querySelectorAll(".main-nav")
   .forEach(element => new Expanded(element));
 
-let links = document
-  .querySelectorAll(".tabs .tabs-link")
-  .forEach(tab => new Tabs(tab));
-//console.log(links);
+let link = document
+  .querySelectorAll(".tabs-links")
+  .forEach(link => new TabLink(link));

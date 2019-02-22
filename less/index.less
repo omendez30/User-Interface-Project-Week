@@ -146,17 +146,18 @@ html {
 html,
 body {
   font-family: "Roboto", Arial, sans-serif;
+  @media (max-width: 500px) {
+    font-family: "Roboto", Arial, sans-serif;
+  }
 }
-.home {
+
+.container {
   margin: 0 auto;
   width: 100%;
   max-width: 800px;
-  // @media (max-width: 500px) {
-  //   width: 100%;
-  //   margin: 0;
-  //   padding: 0;
-  // }
-
+  @media (max-width: 500px) {
+    width: 100%;
+  }
   header {
     display: flex;
     flex-direction: row;
@@ -169,17 +170,22 @@ body {
     padding: 5px;
     width: 100%;
 
-    // @media (max-width: 500px) {
-    //   width: 100%;
-    //   padding: 0;
-    //   margin: 0;
-    // }
+    @media (max-width: 500px) {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
 
     .company {
       color: #fff;
       padding: 5px 50px;
+      @media (max-width: 500px) {
+      }
       .company-logo {
         font-size: 2rem;
+        @media (max-width: 500px) {
+          font-size: 6.4rem;
+        }
         a {
           color: #ffffff;
           text-decoration: none;
@@ -187,17 +193,30 @@ body {
       }
     }
     .main-nav {
-      position: relative;
-      right: 50px;
       cursor: pointer;
-      overflow: visible;
+      display: flex;
+      justify-content: flex-end;
       width: 100%;
+      height: 100%;
       padding: 0 30px;
+      @media (max-width: 500px) {
+        position: fixed;
+      }
       //left: 120px;
       .dropdown-button {
         padding: 15px;
-        position: relative;
-        right: -600px;
+        width: 50%;
+        height: 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        @media (max-width: 500px) {
+        }
+        // position: relative;
+        // right: -600px;
+        .close-img {
+          align-items: flex-end;
+        }
         .hide-btn {
           display: none;
         }
@@ -209,101 +228,86 @@ body {
       position: initial;
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-content: center;
       margin-top: 10px;
       background: #828282;
       color: #ffffff;
-      padding-left: 50px;
-      
-      ul {
-        li {
-          margin-bottom: 30px;
-          a {
-            color: #ffffff;
-            padding: 10px;
-            text-decoration: none;
-              &:hover{
-              color: black;
-            }
-          }
-          }
-        }
+      @media (max-width: 500px) {
+        align-items: center;
+        height: 70px;
       }
     }
     .menu-link {
       width: 100%;
+      align-content: center;
       text-align: center;
       padding: 20px 0;
       font-size: 6.4rem;
       text-decoration: none;
+      margin-left: 20px;
+      color: #ffffff;
     }
     .menu-hidden {
       display: none;
     }
   }
 
-  .title {
-    font-size: 6.4rem;
-    font-weight: bold;
-    color: #fff;
-    background-image: url("https://github.com/omendez30/User-Interface-Project-Week/blob/master/img/home/home-jumbotron.png?raw=true");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 65vh;
+  .title-img {
     width: 100%;
-    background-repeat: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-content: flex-start;
+    height: 100%;
+    margin-bottom: 0;
+  }
+  h1 {
+    width: 50%;
+    font-size: 6.4rem;
+    color: #ffffff;
+    //border: 1px solid red;
+    padding: 10px;
+    line-height: 1.4;
+    position: relative;
+    bottom: 300px;
+    left: 60px;
+    font-weight: bold;
+    margin-bottom: 0;
     @media (max-width: 500px) {
-      height: 65vh;
-      background-image: url("https://github.com/omendez30/User-Interface-Project-Week/blob/master/img/home/home-jumbotron.png?raw=true");
-      height: 100%;
-      width: 100%;
-      //border: 1px solid red;
-    }
-    h1 {
-      width: 40%;
-      margin: 30px 50px;
-      //border: 1px solid red;
-      padding: 10px;
-      align-items: space-evenly;
-      line-height: 1.4;
-    }
-    @media (max-width: 500px) {
-      font-size: 3.2rem;
+      font-size: 2rem;
+      width: 50%;
+      margin-left: 30px;
     }
   }
+
   section {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     @media (max-width: 500px) {
-      display: flex;
-      flex-direction: column-reverse;
-      border: 1px solid green;
+      width: 100%;
+      flex-direction: column;
     }
     .description {
+      width: 100%;
       display: flex;
       flex-direction: row;
+      justify-content: center;
       align-items: center;
       @media (max-width: 500px) {
-        width: 100%;
+        display: flex;
         flex-direction: column-reverse;
       }
-      img {
-        width: 50%;
-        padding: 5px 10px;
-        align-content: space-around;
-        margin-top: 60px;
-        margin-bottom: 20px;
-      }
+
       h3 {
         font-size: 2.8rem;
         font-weight: bold;
         flex-direction: column;
         padding: 20px 20px;
         margin-top: 20px;
+        height: 50%;
         width: 100%;
-        align-content: flex-end;
+        align-content: flex-start;
+        @media (max-width: 500px) {
+          display: flex;
+          flex-direction: column;
+        }
       }
       p {
         flex-direction: column;
@@ -327,11 +331,26 @@ body {
           color: #ffffff;
         }
       }
-      .bottom-img {
+
+      img {
+        width: 50%;
+        padding: 5px 10px;
+        align-content: space-around;
+        margin-top: 60px;
+        margin-bottom: 20px;
+        @media (max-width: 500px) {
+          display: flex;
+          flex-direction: column-reverse;
+          height: 100%;
+          width: 80%;
+        }
+      }
+
+      .villas {
         width: 100%;
         margin-top: 50px;
       }
-      div .recent-project-content {
+      .recent-project-content {
         width: 50%;
         align-items: center;
         padding: 10px;
