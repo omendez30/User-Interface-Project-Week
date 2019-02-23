@@ -38,7 +38,7 @@ class TabContent {
     cardToDisplay.classList.add("selected");
   }
 }
-tabs = document.querySelectorAll(".button").forEach(tab => new Tab(tab));
+let tabs = document.querySelectorAll(".button").forEach(tab => new Tab(tab));
 
 class NavButton {
   constructor(button) {
@@ -49,9 +49,9 @@ class NavButton {
   handleClick() {
     document
       .querySelectorAll(".navigation-btn")
-      .forEach(button => button.classList.toggle("active"));
+      .forEach(button => button.classList.toggle("current"));
     const navItems = document.querySelector(".nav-items");
-    navItems.classList.toggle("active");
+    navItems.classList.toggle("current");
   }
 }
 
