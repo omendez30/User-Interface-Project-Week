@@ -1,0 +1,97 @@
+.services-jumbotron {
+  height: 190px;
+  width: 100%;
+}
+.services-jumbotron img {
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .services-jumbotron img {
+    width: 100%;
+  }
+}
+.services-jumbotron .services-jumbotron-text {
+  font-size: 5rem;
+  margin: -80px 0 0 5%;
+  font-weight: bold;
+  width: 300px;
+  color: #ffffff;
+}
+@media (max-width: 500px) {
+  .services-jumbotron .services-jumbotron-text {
+    width: 100%;
+  }
+}
+.services-jumbotron .services-jumbotron-text p {
+  margin: 10px;
+}
+.about-services {
+  height: 150px;
+  width: 85%;
+  margin: 5% 0;
+}
+.about-services p {
+  font-size: 1.01rem;
+  line-height: 1.5rem;
+}
+.services-tabs {
+  width: 85%;
+}
+.services-tabs .tabs {
+  display: flex;
+  justify-content: space-between;
+}
+.services-tabs .tabs p {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.services-tabs .tabs .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 22%;
+  border: 1px solid black;
+  cursor: pointer;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .services-tabs .tabs .button {
+    font-size: 1.6rem;
+  }
+}
+.services-tabs .tabs .selected {
+  background-color: #5e9fb9;
+  color: #ffffff;
+}
+.services-tabs .service-tabs-contents .tab-content {
+  display: none;
+  height: 380px;
+  padding: 5% 0;
+}
+.services-tabs .service-tabs-contents .tab-content .tab-text {
+  width: 50%;
+}
+.services-tabs .service-tabs-contents .tab-content .tab-text h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 2%;
+}
+.services-tabs .service-tabs-contents .tab-content .tab-text p {
+  font-size: 1rem;
+  line-height: 1.7rem;
+  margin-bottom: 5%;
+}
+@media (max-width: 500px) {
+  .services-tabs .service-tabs-contents .tab-content .tab-text p {
+    margin: 0;
+  }
+}
+.services-tabs .service-tabs-contents .tab-content img {
+  margin: 5% 0 10% 0;
+}
+.services-tabs .service-tabs-contents .selected {
+  display: flex;
+  justify-content: space-between;
+}

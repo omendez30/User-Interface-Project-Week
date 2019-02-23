@@ -1,0 +1,108 @@
+.services-jumbotron {
+  height: 190px;
+  width: 100%;
+
+  img {
+    height: 100%;
+    width: 100%;
+
+    @media (max-width: 500px) {
+      width: 100%;
+    }
+  }
+  .services-jumbotron-text {
+    font-size: 5rem;
+    margin: -80px 0 0 5%;
+    font-weight: bold;
+    width: 300px;
+    color: #ffffff;
+
+    @media (max-width: 500px) {
+      width: 100%;
+    }
+
+    p {
+      margin: 10px;
+    }
+  }
+}
+//**********************************************Services Jumbotron
+.about-services {
+  height: 150px;
+  width: 85%;
+  margin: 5% 0;
+
+  p {
+    font-size: 1.01rem;
+    line-height: 1.5rem;
+  }
+}
+//***********************************************About service class
+
+.services-tabs {
+  width: 85%;
+
+  .tabs {
+    display: flex;
+    justify-content: space-between;
+    p {
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+    .button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      width: 22%;
+      border: 1px solid black;
+      cursor: pointer;
+      width: 100%;
+
+      @media (max-width: 500px) {
+        font-size: 1.6rem;
+      }
+    }
+
+    .selected {
+      background-color: #5e9fb9;
+      color: #ffffff;
+    }
+  }
+
+  .service-tabs-contents {
+    .tab-content {
+      display: none;
+      height: 380px;
+      padding: 5% 0;
+
+      .tab-text {
+        width: 50%;
+        h2 {
+          font-size: 1.6rem;
+          font-weight: bold;
+          margin-bottom: 2%;
+        }
+        p {
+          font-size: 1rem;
+          line-height: 1.7rem;
+          margin-bottom: 5%;
+          //border: 1px solid red;
+          @media (max-width: 500px) {
+            margin: 0;
+          }
+        }
+      }
+
+      img {
+        margin: 5% 0 10% 0;
+      }
+    }
+
+    .selected {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+//***************************************Services tab
