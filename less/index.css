@@ -184,13 +184,11 @@ table {
 }
 .services-tabs .tabs {
   display: flex;
-  width: 100%;
+  justify-content: space-between;
 }
 @media (max-width: 500px) {
   .services-tabs .tabs {
     width: 100%;
-    flex-direction: column;
-    margin: 20px;
   }
 }
 .services-tabs .tabs p {
@@ -226,14 +224,13 @@ table {
 }
 .services-tabs .service-tabs-contents .tab-content {
   display: none;
-  height: 100%;
+  height: 380px;
   padding: 5% 0;
 }
 @media (max-width: 500px) {
   .services-tabs .service-tabs-contents .tab-content {
     display: flex;
     flex-direction: column;
-    display: none;
   }
 }
 .services-tabs .service-tabs-contents .tab-content .tab-text {
@@ -266,14 +263,11 @@ table {
 }
 .services-tabs .service-tabs-contents .tab-content img {
   margin: 5% 0 10% 0;
-  height: 100%;
 }
 @media (max-width: 500px) {
   .services-tabs .service-tabs-contents .tab-content img {
-    width: 95%;
-    height: 100%;
+    width: 100%;
     margin: 20px 0 20px 0;
-    padding: 10px;
   }
 }
 .services-tabs .service-tabs-contents .selected {

@@ -1,0 +1,181 @@
+.contact {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+  @media (max-width: 500px) {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+  }
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 1.6rem;
+    font-weight: bold;
+    width: 100%;
+    background: #828282;
+    padding: 5px;
+    width: 100%;
+    .company {
+      padding: 10px 50px;
+      color: #ffffff;
+      h3 {
+        font-size: 2.4rem;
+        a {
+          text-decoration: none;
+          color: #ffffff;
+        }
+        @media (max-width: 500px) {
+          font-size: 3.2rem;
+        }
+      }
+    }
+    .main-nav {
+      position: relative;
+      left: 2px;
+      padding: 10px 50px;
+      top: 5px;
+    }
+    .menu {
+      text-align: center;
+      //padding: 0 800px;
+      display: none;
+      position: relative;
+      line-height: 75px;
+      width: 100%;
+      top: 60px;
+      right: 10px;
+      border: 1px solid black;
+      a {
+        border: 1px solid green;
+        text-decoration: none;
+        li {
+          font-size: 6.4rem;
+        }
+      }
+    }
+  }
+  .contact-header-img {
+    img {
+      width: 100%;
+    }
+    h1 {
+      position: relative;
+      bottom: 80px;
+      left: 60px;
+      font-size: 6.4rem;
+      font-weight: bold;
+      color: #ffffff;
+      width: 90%;
+    }
+  }
+  .main-content {
+    display: flex;
+    flex-direction: row;
+    .input-info {
+      margin-right: 50px;
+      display: flex;
+      flex-direction: column;
+      .welcome-text {
+        font-size: 2.4rem;
+        font-weight: bold;
+        margin: 0 50px 20px 50px;
+      }
+      form {
+        width: 100%;
+        font-size: 1.6rem;
+        margin: 10px 50px;
+      }
+      input {
+        width: 80%;
+        border-radius: 5px;
+        margin: 10px 50px;
+        padding: 10px 0;
+      }
+      .disclaimer {
+        margin: 0px 50px;
+      }
+      textarea {
+        width: 80%;
+        margin: 0 50px;
+        padding: 20px;
+      }
+      // .radio-btn {
+      //   display: flex;
+      //   flex-direction: row;
+      //   justify-content: flex-start;
+      //   margin: 0;
+      //   width: 40%;
+      //   border: 1px solid red;
+      // }
+
+      .radio-btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-left: 46px;
+        label {
+          font-size: 1rem;
+          margin: 10px 0;
+        }
+        #small-business {
+          width: 5%;
+          margin: 10px 0;
+        }
+        #residential {
+          width: 5%;
+          margin: 10px 0;
+        }
+        #corporation {
+          width: 5%;
+          margin: 10px 0;
+        }
+      }
+      .submit-btn {
+        margin: 20px 50px 10px 50px;
+        padding: 10px 30px;
+        background: #ffffff;
+        border: 1px solid black;
+        width: 30%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+        cursor: default;
+        &:hover {
+          background: black;
+          color: #ffffff;
+        }
+      }
+    }
+    #locations {
+      font-size: 1.6rem;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      margin-left: 200px;
+      div {
+        margin-bottom: 20px;
+      }
+      .location-header {
+        font-weight: bold;
+        font-size: 2.4rem;
+        margin-bottom: 40px;
+      }
+      .city {
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      address {
+        width: 55%;
+        padding: 10px 0;
+        line-height: 1.5;
+      }
+    }
+  }
+}
